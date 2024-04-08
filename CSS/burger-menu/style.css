@@ -1,0 +1,75 @@
+/* 
+ *  BURGER MANU DESIGN
+ */
+
+:root {
+  --white: #fffdfa;
+  --yellow: #e9aa52;
+}
+
+#menuBurger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #menuBurger {
+    display: block;
+  }
+
+  #menuBurger:before {
+    content: "\2630";
+    font-size: 40px;
+  }
+
+  .active #menuBurger:before {
+    content: "\2715";
+  }
+
+  header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  main {
+    margin-top: 25%;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  nav div {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    margin-top: 20%;
+    width: 100%;
+    height: 60%;
+    background-color: var(--white);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+  }
+
+  nav.active div {
+    top: 0;
+    left: 0;
+    margin-top: 20%;
+    width: 100%;
+    height: 60%;
+    background-color: var(--yellow);
+  }
+
+  nav div a {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+}

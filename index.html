@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <link rel="stylesheet" href="./CSS/burger-menu/style.css" />
     <title>Web-3.0 Project</title>
-    <script src="./script.js"></script>
+    <script async src="./CSS/burger-menu/script.js"></script>
   </head>
+
   <body>
     <header>
-      <nav>
+      <nav id="navBar">
         <a href="#"><img src="./IMG/Logo.svg" alt="home" /></a>
         <div>
           <a href="#">Home</a>
@@ -19,8 +22,10 @@
           <a href="#">Trending</a>
           <a href="#">Categories</a>
         </div>
+        <span id="menuBurger"></span>
       </nav>
     </header>
+
     <main>
       <section class="hero">
         <article class="main-article">
@@ -35,6 +40,7 @@
             <a href="#">Read More</a>
           </div>
         </article>
+
         <section class="new-articles">
           <h2>New</h2>
           <article>
@@ -59,6 +65,7 @@
           </article>
         </section>
       </section>
+
       <section class="best-articles">
         <article>
           <img src="./IMG/2.png" alt="" />
